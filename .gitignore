@@ -2,7 +2,7 @@
 
 #config
 !rollup.config.js
-!src/system.config.js
+!src/systemjs.config.js
 
 # compiled output
 aot
