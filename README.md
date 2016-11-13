@@ -28,7 +28,7 @@ Use the top-right "hamburger menu" to navigate between views or, where available
 
 Note: The app won't work in a private/incognito tab/window. This is only so that it can launch and provide some info (e.g. show your most recent search results) even when you're offline. (The app does not share any data about you with me or anyone else.)
 
-## Suggested Stations to Search for
+### Suggested Stations to Search for
 I've created the app to be understandable by English speakers. However, the publicly available version of the API I'm using does not provide English translations of the Danish location (station) names it uses.
 
 If you're unfamiliar with our transit network (and why wouldn't you be?), and have an English-variant keyboard layout, here are some station names you can try and type (and search for) without breaking your fingers:
