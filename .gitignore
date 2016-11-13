@@ -7,8 +7,8 @@
 # compiled output
 aot
 /aot
-build
-/build
+#build
+#/build
 src/**/*.map
 /src/**/*.map
 src/**/*.js
