@@ -11,7 +11,9 @@ The Udacity assignment for this project was to learn about local storage and cac
 
 ## Personal Training Objectives
 In addition, I had two major training objectives myself:
+
 1. Learn how to develop and deploy Web apps with Angular2, Typescript and Polymer Elements
+
 2. Experiment with a loosely coupled, "classic" object-oriented technical design, even at the potential cost of somewhat reduced performance on older mobile devices
 
 For an overview of the design, please see the visual models in design/system-design.
