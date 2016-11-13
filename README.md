@@ -71,17 +71,17 @@ The Rejseplanen data service provider is not set up to deal with CORS issues, an
 
 By default, the app expects an instance of a CORS proxy server to be running at `http://localhost:3000`. This is already included in the "npm start" script.
 
-However, you're free to change this setting in the preferences export from src/app.module.ts.
+However, you're free to change this setting in the preferences export from `src/app.module.ts`.
 
 ## Unit Testing
-Unit tests are run by loading src/unit-tests.html in a Web browser.
+Unit tests are run by loading `src/unit-tests.html` in a Web browser.
 
 For this project, I was unfortunately defeated by a black hole of setup conflicts, and therefore had to give up on getting Karma to run on my Win box. So run the tests manually in the browser instead. 
 
 ## End-to-End Testing
-Couldn't get Protractor to run, nor grok Angular's approach to UI testing in time for this project's deadline. So no deal, very unfortunately (with a couple of minor exceptions). 
+Couldn't get Protractor to run, nor grok Angular2's approach to UI testing in time for this project's deadline. So no deal, very unfortunately (with a couple of minor exceptions). 
 
-## TODOs and Known Bugs
+## To-Dos and Known Bugs
 (In no particular order.)
 
 ### Known Bugs
@@ -94,14 +94,14 @@ Couldn't get Protractor to run, nor grok Angular's approach to UI testing in tim
 * Revisit use of mixins vs. classical method overloading
 * Find a more streamlined way of creating IndexedDB schema
 * Add progress indicator to "Find later journeys"
-* Add option to fetch earlier journeys to journey planner (not supported by rp api) 
+* Add option to fetch earlier journeys to journey planner (not supported by Rejseplanen API) 
 * Add trip detail view to arrival/departure boards
 * Add date/time picker to arrival/departure boards
 * Add location based transit info (e.g. nearby departures/stops)
 
 ### Testing
 * Add unit tests for every core model's (inherited) write/readObject methods
-* Stop hitting live web services in unit testing; use mock and implement/isolate in separate integration test (capture with spy)
+* Stop hitting live web services in unit testing; use mock and implement/isolate real test in separate integration test (capture with spy)
 * Add unit tests for error message, progress indicator, about and launch components
 * Figure out, implement testing of user interaction with UI (i.e. E2E)
 
