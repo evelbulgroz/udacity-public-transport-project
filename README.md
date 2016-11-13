@@ -60,11 +60,13 @@ This, however is mostly for your convenience. I used WAMP (a.k.a MAMP, i.e. Apac
 To enable offline caching, your server needs to be set up to support https. Mine isn't, so I just tested on my development machine.
 
 ## Build
-Enter `npm run build` from the root project directory in NodeJS. When done, the app is ready to run from build/index.html.
+If you just want to give the app a go, a sample build is included in this repository. To create a new build, enter `npm run build` from the root project directory in NodeJS. When done, the app is ready to run from build/index.html.
 
 You'll get a ton of errors saying `The 'this' keyword is equivalent to 'undefined' at the top level of en ES module...`. These can be safely ignored.
 
-NOTE: You command terminal for the build script needs to speak Linux. I used Cygwin on my Win box. YMMV. 
+Note: Your command terminal for the build script needs to speak Linux. I used Cygwin on my Win box.
+
+Note: If you're not on Windoze, you may experience problems running the build script. At this time, I unfortunately do not have a solution for this, despite my best efforts to avoid platform specific syntax.
 
 ## CORS Proxy Required
 The Rejseplanen data service provider is not set up to deal with CORS issues, and is very unresponsive to requests for help/guidance and/or changes to their server setup. You'll need to setup up a CORS proxy on your own server to work around this issue.
