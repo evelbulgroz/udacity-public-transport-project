@@ -10,26 +10,18 @@ src/**/*.map
 src/**/*.js
 /src/**/*.js
 !cache.worker.js
-lib/*.js
-/lib/*.js
-!lib/modernizr-custom.js
-!/lib/modernizr-custom.js
-!lib/pull-to-refresh-handler.js
-!/lib/pull-to-refresh-handler.js
-
+!src/lib/*.js
 
 #documentation
 api-docs
-/api-docs
 design/ui-design
-/design/ui-design
 
 #original artwork
 *.xcf
 
 # dependencies
-/node_modules
-/bower_components
+node_modules
+bower_components
 
 # IDEs and editors
 /.idea
