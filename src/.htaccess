@@ -1,0 +1,19 @@
+# Some pretty crude redirects to simply get the app to load when hitting server with deep link
+# More sophistication would be nice, but now is not the time to go deep on Apache setup
+#301 Redirect Entire Directory
+
+RedirectMatch 301 ^(.*)/about(/*)$ $1/index.html
+RedirectMatch 301 ^(.*)/arrivals(/*)$ $1/index.html
+RedirectMatch 301 ^(.*)/departures(/*)$ $1/index.html
+RedirectMatch 301 ^(.*)/journey(/*)([0123456789]*)(/*)$ $1/index.html  
+RedirectMatch 301 ^(.*)/planner(/*)$ $1/index.html
+
+#Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+#Prevent directory listings
+Options All -Indexes
+ 

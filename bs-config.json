@@ -1,0 +1,8 @@
+{
+  "https": false,
+  "snippetOptions": {
+    "ignorePaths": "bower_components/**/*.html"
+  },
+  "server": {"baseDir": "./"},
+  "startPath": "src/index.html"
+}
