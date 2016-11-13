@@ -10,7 +10,7 @@ src/**/*.map
 src/**/*.js
 /src/**/*.js
 !cache.worker.js
-!lib/pull-to-refresh-handler.js
+!lib/*.js
 
 #documentation
 api-docs

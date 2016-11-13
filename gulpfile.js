@@ -86,7 +86,7 @@
 	
 	// (re-)build custom Modernizr library
 	gulp.task('compile-modernizr', function() {
-		gulp.src(['src/**/*.js', '!src/lib/modernizr-custom.js'])
+		gulp.src(['src/**/*.js'])
 		.pipe(modernizr('modernizr-custom.js'))
 		.pipe(gulp.dest('src/lib'))
 	});

@@ -16,7 +16,7 @@
     "postbuild": "rm -rf aot && tsc",
     "proxy": "node node_modules/node-CORSproxy/main.js",
     "rollup": "node_modules/.bin/rollup -c rollup.config.js",
-    "start": "concurrently \"npm run proxy\" \"npm run lite\" \"tsc -w\""
+    "start": "concurrently \"npm run proxy\" \"npm run lite\" \"tsc -w\" "
   },
   "private": true,
   "dependencies": {
