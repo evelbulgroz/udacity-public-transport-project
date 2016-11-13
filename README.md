@@ -11,16 +11,16 @@ The Udacity assignment for this project was to learn about local storage and cac
 
 ## Personal Training Objectives
 In addition, I had two major training objectives myself:
-1) Learn how to develop and deploy Web apps with Angular2, Typescript and Polymer Elements
-2) Experiment with a loosely coupled, "classic" object-oriented technical design, even at the potential cost of somewhat reduced performance on older mobile devices
+1. Learn how to develop and deploy Web apps with Angular2, Typescript and Polymer Elements
+2. Experiment with a loosely coupled, "classic" object-oriented technical design, even at the potential cost of somewhat reduced performance on older mobile devices
 
-For an overview of the design, please see the visual models in design/system-design/**/*.*
+For an overview of the design, please see the visual models in design/system-design.
 
 ## Installation
-Download or clone the project from my github, then run "npm run setup" in NodeJS from the root directory. Then run "npm run build" from a Linux savvy terminal to get a build of the project (see also "Build" below).
+Download or clone the project from my github, then run `npm run setup` in NodeJS from the root directory. Then run `npm run build` from a Linux savvy terminal to get a build of the project (see also "Build" below).
 
 ## How to Use
-To get started, build the app then load the file build/index.html into a web browser and enter your journey details when the app has loaded. You can also use src/index.html without doing the build, but it will run much slower.
+To get started, build the app then load the file `build/index.html` into a web browser and enter your journey details when the app has loaded. You can also use `src/index.html` without doing the build, but it will run much slower.
 
 Use the top-right "hamburger menu" to navigate between views or, where available, tap an item in a list to see details, and use the top-right "back" (i.e. left) arrow to go back from a detail view to the main list. (Not all lists have detail views.)
 
@@ -30,31 +30,44 @@ Note: The app won't work in a private/incognito tab/window. This is only so that
 I've created the app to be understandable by English speakers. However, the publicly available version of the API I'm using does not provide English translations of the Danish location (station) names it uses.
 
 If you're unfamiliar with our transit network (and why wouldn't you be?), and have an English-variant keyboard layout, here are some station names you can try and type (and search for) without breaking your fingers:
-"Skagen", "Horsens", "Valby", "Odense", "Forum", "Herlev", "Vesterport", "Fredericia", "Fredensborg", "Gilleleje", "Skjern", "Esbjerg", "Ribe".
+* Skagen
+* Horsens
+* Valby
+* Odense
+* Aarhus
+* Forum
+* Herlev
+* Vesterport
+* Fredericia
+* Fredensborg
+* Gilleleje
+* Skjern
+* Esbjerg
+* Ribe
 
 ## IDE
 I used Visual Studio Code ~1.6.x for this project. Other editors/compilers may work equally well, but I haven't felt the need to try them.  
 
 ## Development Server
-Enter "npm run start" from the root project directory in NodeJS.
+Enter `npm run start` from the root project directory in NodeJS.
 
-This will start lite server, a CORS proxy server (see below), and the TypeScript compiler in watch mode. It will also open src/index.html in your default web browser and connect it up with BrowserSync.
+This will start lite server, a CORS proxy server (see below), and the TypeScript compiler in watch mode. It will also open `src/index.html` in your default web browser and connect it up with BrowserSync.
 
 This, however is mostly for your convenience. I used WAMP (a.k.a MAMP, i.e. Apache) myself most of the time during development, so deep links will only work with Apache (they currently all just redirect to the app's base URL.)
 
 To enable offline caching, your server needs to be set up to support https. Mine isn't, so I just tested on my development machine.
 
 ## Build
-Enter 'npm run build' from the root project directory in NodeJS. When done, the app is ready to run from build/index.html.
+Enter `npm run build` from the root project directory in NodeJS. When done, the app is ready to run from build/index.html.
 
-You'll get a ton of errors saying "The 'this keyword is equivalent to 'undefined' at the top level of en ES module...". These can be safely ignored.
+You'll get a ton of errors saying `The 'this' keyword is equivalent to 'undefined' at the top level of en ES module...`. These can be safely ignored.
 
 NOTE: You command terminal for the build script needs to speak Linux. I used Cygwin on my Win box. YMMV. 
 
 ## CORS Proxy Required
 The Rejseplanen data service provider is not set up to deal with CORS issues, and is very unresponsive to requests for help/guidance and/or changes to their server setup. You'll need to setup up a CORS proxy on your own server to work around this issue.
 
-By default, the app expects an instance of a CORS proxy server to be running at http://localhost:3000. This is already included in the "npm start" script.
+By default, the app expects an instance of a CORS proxy server to be running at `http://localhost:3000`. This is already included in the "npm start" script.
 
 However, you're free to change this setting in the preferences export from src/app.module.ts.
 
@@ -91,4 +104,4 @@ Couldn't get Protractor to run, nor grok Angular's approach to UI testing in tim
 * Figure out, implement testing of user interaction with UI (i.e. E2E)
 
 ## Credits
-I initially based this project on the "Tour of Heroes" demo provided by the Angular team, then gradually made it my own. What remains is all me.  
+I initially based this project on the "Tour of Heroes" demo provided by the Angular team, then gradually made it my own. What remains is all on me.  
