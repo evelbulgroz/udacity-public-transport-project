@@ -13,8 +13,14 @@ src/**/*.map
 /src/**/*.map
 src/**/*.js
 /src/**/*.js
+
+#non-compiled js
 !cache.worker.js
 !src/lib/*.js
+
+#config
+!rollup.config.js
+!src/systemjs.config.js
 
 #documentation
 api-docs
