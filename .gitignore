@@ -25,6 +25,7 @@ src/**/*.js
 #documentation
 api-docs
 design/ui-design
+docs
 
 #original artwork
 *.xcf
