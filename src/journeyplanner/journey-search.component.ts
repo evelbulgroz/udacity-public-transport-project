@@ -89,7 +89,7 @@ export class JourneySearchComponent {
 		}
 		
 		/** Populates locations list for autocomplete in from/to (i.e. origin/destination) input fields */
-		public getLocations(query: string, target: string) {
+		public fetchLocations(query: string, target: string) {
 			let suggestions: any = [];
 			this._service.fetchLocations(query)
 				.then((result: Stop[]) => {
@@ -164,7 +164,7 @@ export class JourneySearchComponent {
 				this[target + 'Suggestions'] = [];
 			}
 			else if (this[target + 'Suggestions'].length === 0) { // call location service, if needed
-				this.getLocations(query, target);
+				this.fetchLocations(query, target);
 			}
 			// else do nothing: repeated updates obscure suggestions from users
 		}
