@@ -19,14 +19,19 @@ In addition, I had two major training objectives myself:
 For an overview of the design, please see the visual models in design/system-design.
 
 ## Installation
+### Setup
 Download or clone the project from my github, then run `npm run setup` in NodeJS from the root directory. Then run `npm run build` from a Linux savvy terminal to get a build of the project (see also "Build" below).
 
-## How to Use
-To get started, build the app then load the file `build/index.html` into a web browser and enter your journey details when the app has loaded. You can also use `src/index.html` without doing the build, but it will run much slower.
+### Online Host
+To get started, build the app, move the build to an external Web server, run `npm run proxy` in NodeJS, then load the file `build/index.html` into a web browser (form the Web server) and enter your journey details when the app has loaded.
 
+### Local Host
+If you do not have a access to an external Web server, you can run the app locally on your machine by running `npm run start` in NodeJS after setting up and building the project. This will load the development version of the app into your default Web browser. Replace `src` with `build` at the end of the URL to get the smoothest experience.
+
+## How to Use
 Use the top-right "hamburger menu" to navigate between views or, where available, tap an item in a list to see details, and use the top-right "back" (i.e. left) arrow to go back from a detail view to the main list. (Not all lists have detail views.)
 
-Note: The app won't work in a private/incognito tab/window. This is only so that it can launch and provide some info (e.g. show your most recent search results) even when you're offline. (The app does not share any data about you with me or anyone else.)
+Note: In some Web browsers, the app may not work in a private/incognito tab/window.
 
 ### Suggested Stations to Search for
 I've created the app to be understandable by English speakers. However, the publicly available version of the API I'm using does not provide English translations of the Danish location (station) names it uses.
@@ -100,6 +105,7 @@ Couldn't get Protractor to run, nor grok Angular2's approach to UI testing in ti
 * Add trip detail view to arrival/departure boards
 * Add date/time picker to arrival/departure boards
 * Add location based transit info (e.g. nearby departures/stops)
+* Figure out why app refuses to load in some incognito/private modes
 
 ### Testing
 * Add unit tests for every core model's (inherited) write/readObject methods
