@@ -19,11 +19,11 @@ In addition, I had two major training objectives myself:
 For an overview of the design, please see the visual models in design/system-design.
 
 ## Installation
-### Setup
+### Initial setup
 Download or clone the project from my github, then run `npm run setup` in NodeJS from the root directory. Then run `npm run build` from a Linux savvy terminal to get a build of the project (see also "Build" below).
 
 ### Online Host
-To get started, build the app, move the build to an external Web server, run `npm run proxy` in NodeJS, then load the file `build/index.html` into a web browser (from the Web server) and enter your journey details when the app has loaded.
+To get started, do the initial setup and build the app, move the build to an external Web server, run `npm run proxy` in NodeJS, then load the file `build/index.html` into a web browser (from the Web server) and enter your journey details when the app has loaded.
 
 ### Local Host
 If you do not have a access to an external Web server, you can run the app locally on your machine by running `npm run start` in NodeJS after setting up and building the project. This will load the development version of the app into your default Web browser. Replace `/src/` with `/build/` at the end of the URL to get the smoothest experience.
