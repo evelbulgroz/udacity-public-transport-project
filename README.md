@@ -26,7 +26,7 @@ Download or clone the project from my github, then run `npm run setup` in NodeJS
 To get started, do the initial setup and build the app, move the build to an external Web server, run `npm run proxy` in NodeJS, then load the file `build/index.html` into a web browser (from the Web server) and enter your journey details when the app has loaded.
 
 ### Local Host
-If you do not have a access to an external Web server, you can run the app locally on your machine by running `npm run start` in NodeJS after setting up and building the project. This will load the development version of the app into your default Web browser. Replace `/src/` with `/build/` at the end of the URL to get the smoothest experience.
+If you do not have access to an external Web server, you can run the app locally on your machine by running `npm run start` in NodeJS after setting up and building the project. This will load the development version of the app into your default Web browser. Replace `/src/` with `/build/` at the end of the URL to get the smoothest experience.
 
 ## How to Use
 Use the top-right "hamburger menu" to navigate between views or, where available, tap an item in a list to see details, and use the top-right "back" (i.e. left) arrow to go back from a detail view to the main list. (Not all lists have detail views.)
