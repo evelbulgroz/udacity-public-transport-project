@@ -94,9 +94,11 @@ export class JourneySearchComponent {
 			this._service.fetchLocations(query)
 				.then((result: Stop[]) => {
 					// Flatten object model into json object array required by vaadin-combo-box
-					result.forEach((stop) => {
-						suggestions.push(stop.toJSON());
-					});
+					if (result.forEach) { // service did not come up empty
+						result.forEach((stop) => {
+							suggestions.push(stop.toJSON());
+						});
+					}
 					if (target.toLowerCase() === 'origin') {
 						this.originSuggestions = suggestions;
 					}

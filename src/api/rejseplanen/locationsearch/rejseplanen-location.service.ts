@@ -79,7 +79,8 @@ export class RejseplanenLocationService implements ILocationService {
 			})
 			.catch(function(error: Error) {
 				console.log(error);
-				Promise.reject(error); // bubble up to caller
+				return {};
+				//Promise.reject(error); // bubble up to caller
 			})
 	}
 }
