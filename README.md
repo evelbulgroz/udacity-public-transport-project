@@ -89,7 +89,7 @@ For this project, I was unfortunately defeated by a black hole of setup conflict
 Couldn't get Protractor to run, nor grok Angular2's approach to UI testing in time for this project's deadline. So no deal, very unfortunately (with a couple of minor exceptions). 
 
 ## Documentation
-You can create auto-generated documentation of the code by running `npm run docs` in NodeJS. This will generate a ton of `Cannot find name [some fancy ES6 type]` errros which you can safely ignore.
+You can create auto-generated documentation of the code by running `npm run docs` in NodeJS. This will generate a ton of `Cannot find name [some fancy ES6 type]` errors which you can safely ignore.
 
 Once generated, open `docs/index.html` to browse the docs. They take up a bit of space, so I don't include them by default in this repo.
 
