@@ -8,37 +8,6 @@
 	<link rel="icon" type="image/png" href="images/favicon.png"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--script>
-		if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('./cache.worker.js', {scope: './'})
-					.then((reg) => {
-						// registration worked
-						this._ready = true;
-						this._reg = reg;
-						console.log(reg);
-						console.log('CacheWorker registration complete. Scope is ' + reg.scope);
-						if (reg.waiting) {
-							console.log('waiting');
-							//this._showUpdateNotification();
-						}
-						if (reg.installing) {
-							console.log('CacheWorker installing');
-							reg.installing.addEventListener('statechange', (event) => {
-								if(event.currentTarget.state === 'installed') {
-									console.log('installed');
-									//this._showUpdateNotification();
-								}
-								
-							});
-						}
-					})
-					.catch((error) => {
-						// registration failed
-						console.log('CacheWorker registration failed with ' + error);
-					});
-		}
-	</script-->
-
 	<!-- build:js lib.js -->
       <!-- IE required polyfills, in this exact order -->
         <script src="../node_modules/core-js/client/shim.min.js"></script>
