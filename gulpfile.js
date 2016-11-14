@@ -67,7 +67,12 @@
 	// copy concatenated and minified polymer elements resources to build folder
 	gulp.task('build-polymer', function() {
 		return gulp.src('src/elements.html')
-		.pipe(vulcanize({stripComments: true}))
+		.pipe(vulcanize({
+			excludes: [],
+			inlineScripts: true,
+			stripComments: true,
+			stripExcludes: false
+		}))
 		.pipe(gulpif('*.html', htmlmin({  // minify html (seems not to have much effect)
 				collapseWhitespace: true,
 				removeComments: true,
