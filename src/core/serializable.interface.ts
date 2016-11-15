@@ -6,7 +6,7 @@ import {localStorage as storage} from './../app.module';
 	* Provides default methods that shield the storage details from clients, and that handle some generic
 	* steps in object serialization and deserialization.
 	* Inspired by, but not a direct copy of, the similar Java API.
-	* NOTE: 'self' references in method signatures is needed b/c 'this' references have no meaning
+	* NOTE: 'self' references in default method signatures is needed b/c 'this' references have no meaning
 	* in a TypeScript interface. For now, live with the redundancy.
 */
 
@@ -23,15 +23,17 @@ export interface Serializable {
 	 */
 	onDeserialized(objectMap: Map<number, any>): void;
 	
-	/** Reads object state in from local storage
-	 * References to complex objects are expected to be stored as simple {_className: '', _modelId: ###} literals
+	/** Reads object state in from local storage.
+	 * References to complex objects are expected to be stored as simple {_className: '', _modelId: ###} literals.
+	 * A default implementation is provided by the interface.
 	 * @param {Serializable} self Reference to object itself - b/c default methods are mixed in, 'this' cannot be trusted
 	 * @param {Boolean} recurse Flag indicating whether to read in all descendants in the object's hierarchy, or just the object itself (default is false)
 	 * @return {Promise} A Promise resolving to the updated object 
 	 */
 	readObject(self: Serializable, recurse: boolean): Promise<Serializable>;
 
-	/** Removes object from local storage
+	/** Removes object from local storage.
+	 * A default implementation is provided by the interface.
 	 * @return {Serializable} Reference to the object that was removed from storage
 	 */
 	removeObject(self: Serializable): Promise<Serializable>;
@@ -39,7 +41,8 @@ export interface Serializable {
 	/** Converts object state to JSON */
 	toJSON(): any;
 
-	/** Writes object state to local storage
+	/** Writes object state to local storage.
+	 * A default implementation is provided by the interface.
 	 * @param {Serializable} self Reference to object itself - b/c default methods are mixed in, 'this' cannot be trusted
 	 * @param {Boolean} recurse Flag indicating whether to write out all descendants in the object's hierarchy, or just the object itself (default is false)
 	 * @return {Promise} A Promise resolving to the (integer) storage key of the written object

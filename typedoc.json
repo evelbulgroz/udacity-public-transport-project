@@ -1,16 +1,17 @@
 {
-  "name": "Public Transit App",
-  "mode": "modules",
-  "out": "docs",
-  "theme": "default",
-  "ignoreCompilerErrors": "true",
-  "experimentalDecorators": "true",
   "emitDecoratorMetadata": "true",
-  "target": "ES5",
+  "exclude": "**/*.+(spec.ts|mock.ts)",
+  "experimentalDecorators": "true",
+  "ignoreCompilerErrors": "true",
+  "mode": "modules",
+  "module": "system",
   "moduleResolution": "node",
+  "name": "Public Transit App",
+  "out": "docs",
   "preserveConstEnums": "true",
   "stripInternal": "true",
   "suppressExcessPropertyErrors": "true",
   "suppressImplicitAnyIndexErrors": "true",
-  "module": "system"
+  "target": "ES5",
+  "theme": "default"
 }

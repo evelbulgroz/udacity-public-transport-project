@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc && gulp build && npm run compile && npm run rollup",
     "compile": "node_modules/.bin/ngc -p tsconfig-aot.json",
-    "docs": "typedoc --options typedoc.json --exclude '**/*.spec.ts' ./src/",
+    "docs": "typedoc --options typedoc.json ./src/",
 	"lint": "tslint \"src/**/*.ts\"",
     "lite": "lite-server",
     "postbuild": "rm -rf aot && tsc",
