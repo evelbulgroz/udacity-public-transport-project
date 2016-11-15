@@ -10,6 +10,9 @@ import {RejseplanenStop} from './../core/rejseplanen-stop.model';
 
 declare const fetch: Function; // whatwg-fetch typings cause compiler errors, declare away the problem instead
 
+/**@classdesc Manages calls for location (station/stop) related data to the Rejseplanen API.
+ * Returns data parsed into classes derived from the core models, so that app core can stay uncoupled from concrete transit API.
+*/
 @Injectable()
 export class RejseplanenLocationService implements ILocationService {
 	/** Fetches list of locations that match query from Rejseplanen.dk's location service

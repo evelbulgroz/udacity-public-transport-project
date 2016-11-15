@@ -7,6 +7,10 @@ import {IDepartureService} from './departure-service.interface';
 import {Stop} from './../core/stop.model';
 import {Trip} from './../core/trip.model';
 
+/**@classdesc Manages calls for departures related data from core classes/components.
+ * Encapsulates concrete API departures service so core classes need not know about it. 
+ * Operates exclusively on core models in order to otherwise decouple from any concrete transit API.
+*/
 @Injectable() // can't figure out how to insert provider here, so doing it in calling component for now
 export class DepartureService implements IDepartureService{
 	private _departures: Array<Trip> = []; // stores results of most recent arrivals search

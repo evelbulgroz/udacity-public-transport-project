@@ -17,6 +17,9 @@ import {Trip} from './../../../core/trip.model';
 
 declare const fetch: Function; // whatwg-fetch typings cause compiler errors, declare away the problem instead
 
+/**@classdesc Manages calls for journey planning related data to the Rejseplanen API.
+ * Returns data parsed into classes derived from the core models, so that app core can stay uncoupled from concrete transit API.
+*/
 @Injectable()
 export class RejseplanenJourneyService implements IJourneyService {
 	private _journeys: Array<RejseplanenJourney> = [];

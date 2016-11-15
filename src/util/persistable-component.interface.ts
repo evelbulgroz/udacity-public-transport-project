@@ -10,7 +10,9 @@ export interface PersistableComponent {
 	/** Commits the component's current state to local storage */
 	storeState(): Promise<number>;
 	
-	/** Retrieves and recreates the component's latest state from local storage */
+	/** Retrieves and recreates the component's latest state from local storage.
+	 * Interface provides a default implementation.
+	 */
 	restoreState(componentName?: string): Promise<ComponentState>;
 }
 

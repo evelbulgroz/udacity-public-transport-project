@@ -17,7 +17,9 @@
 	import {styles} from './journey-search.component.css'; // include template in compiled bundle; external html may cause extra http request 
 	//import styles: string from './progress-indicator.component.html'; // no need for ts literal when ts compiler catches up
 
-
+/**@classdesc Manages display of, and user interaction with, the search form in the Journey Planner view.
+ * Enables user to enter journey search terms and submit the search.
+*/
 @Component({
 	selector: 'journey-search',
 	template: htmlTemplate,

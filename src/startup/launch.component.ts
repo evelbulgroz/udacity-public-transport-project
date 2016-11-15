@@ -14,7 +14,9 @@ import {htmlTemplate} from './launch.component.html'; // include template in com
 import {styles} from './launch.component.css'; // include template in compiled bundle; external html may cause extra http request 
 //import styles: string from './launch.component.html'; // no need for ts literal when ts compiler catches up
 
-/** @classdesc Startup screen after initial, static splash. Redirects to stored component or, failing that, root component (as defined in routing module) */
+/** @classdesc Manages startup screen after initial, static HTML splash.
+ * Redirects to stored component or, failing that, root component (as defined in routing module)
+ */
 @Component({
 	selector: 'startup',
 	template: htmlTemplate,

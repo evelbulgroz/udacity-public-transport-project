@@ -21,7 +21,10 @@
 	import {styles} from './journey-details.component.css'; // include template in compiled bundle; external html may cause extra http request 
 	//import styles: string from './progress-indicator.component.html'; // no need for ts literal when ts compiler catches up
 
-
+/**@classdesc Manages display of, and user interaction with, the Journey Details view.
+ * Enables user to see a list of legs (i.e. passages along (part of) a pre-established transit line) on a journey.
+ * Operates exclusively on core models in order to decouple from any concrete transit API.
+*/
 @Component({
 	selector: 'public-transport-app-journey-details',
 	template: htmlTemplate,

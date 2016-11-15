@@ -16,6 +16,9 @@ import {StopTime} from './../../../core/stop-time.model';
 
 declare const fetch: Function; // whatwg-fetch typings cause compiler errors, declare away the problem instead
 
+/**@classdesc Manages calls for departures related data to the Rejseplanen API.
+ * Returns data parsed into classes derived from the core models, so that app core can stay uncoupled from concrete transit API.
+*/
 @Injectable()
 export class RejseplanenDepartureService implements IDepartureService {
 	/** Gets list of departures at stop from Rejseplanen.dk's stationboard service */

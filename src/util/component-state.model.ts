@@ -10,8 +10,8 @@ import {Model} from './../core/model';
 import {promiseEach} from './../util/promise';
 import {Serializable, Serializable_Defaults} from './../core/serializable.interface';
 
-/** @classdesc Helper class for storing and retrieving component state to and from storage
- * Creating separate object to avoid extending Angular Component class (b/c unpredicatable consequences)
+/** @classdesc Helper class for generic storing and retrieving of component state to and from storage
+ * Creating separate object to avoid extending Angular Component class (b/c unpredictable consequences long-term)
  * @author Ulrik H. Gade, October 2016
  */
 @Injectable()

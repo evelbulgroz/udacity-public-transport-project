@@ -18,7 +18,10 @@
 	import {styles} from './departures.component.css'; // include template in compiled bundle; external html may cause extra http request 
 	//import styles: string from './departures.component.html'; // no need for ts literal when ts compiler catches up?
 
-
+/**@classdesc Manages display of, and user interaction with, the Departures view.
+ * Enables user to search for, and see a list of, rail transit departures at any station in the network.
+ * Operates exclusively on core models in order to decouple from any concrete transit API.
+*/
 @Component({
 	selector: 'public-transport-app-departures',
 	template: htmlTemplate,

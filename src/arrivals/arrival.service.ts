@@ -7,6 +7,10 @@ import {IArrivalService} from './../arrivals/arrival-service.interface';
 import {Stop} from './../core/stop.model';
 import {Trip} from './../core/trip.model';
 
+/**@classdesc Manages calls for arrivals related data from core classes/components.
+ * Encapsulates concrete API arrival service so core classes need not know about it. 
+ * Operates exclusively on core models in order to otherwise decouple from any concrete transit API.
+*/
 @Injectable()
 export class ArrivalService implements IArrivalService {
 	private _arrivals: Array<Trip> = []; // stores results of most recent arrivals search

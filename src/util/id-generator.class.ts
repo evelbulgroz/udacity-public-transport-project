@@ -1,3 +1,5 @@
+'use strict';
+
 /** @classdesc Utility class for generating unique Model ids internal to app.
  * Singleton, so has no public constructor, use getInstance() class method instead. 
  */

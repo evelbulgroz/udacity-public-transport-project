@@ -6,7 +6,7 @@ import {preferences} from './../app.module';
 
 /**@classdesc Convenience class for initializing and updating caching service worker.
  * Inwardly implemented as singleton to avoid dealing with multiple initializations of same service worker.
- * But intended for use with Angular2's dependency injector, which requires a public constructor.
+ * But intended for use with Angular2's dependency injector which requires a public constructor.
  * So a constructor is provided, which simply returns the same instance if invoked repeatedly. 
  */
 @Injectable()

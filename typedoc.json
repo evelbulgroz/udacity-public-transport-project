@@ -1,6 +1,6 @@
 {
   "emitDecoratorMetadata": "true",
-  "exclude": "**/*.+(spec.ts|mock.ts)",
+  "exclude": "**/*.+(css.ts|html.ts|mock.ts|spec.ts)",
   "experimentalDecorators": "true",
   "ignoreCompilerErrors": "true",
   "mode": "modules",

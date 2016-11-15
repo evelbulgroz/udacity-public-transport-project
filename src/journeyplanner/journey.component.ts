@@ -23,7 +23,10 @@
 	import {styles} from './journey.component.css'; // include template in compiled bundle; external html may cause extra http request 
 	//import styles: string from './journey.component.css'; // no need for ts literal when ts compiler catches up?
 
-
+/**@classdesc Manages display of, and user interaction with, the Journey Planner view.
+ * Enables user to search for, and see a list of, rail transit connection options between at any two stations in the network.
+ * Operates exclusively on core models in order to decouple from any concrete transit API.
+*/
 @Component({
 	selector: 'public-transport-app-planner',
 	template: htmlTemplate,

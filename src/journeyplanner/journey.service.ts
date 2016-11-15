@@ -9,6 +9,10 @@ import {Leg} from './../core/leg.model';
 import {Stop} from './../core/stop.model';
 //import {StopTime} from './../core/stop-time.model';
 
+/**@classdesc Manages calls for journey planning related data from core classes/components.
+ * Encapsulates concrete API journey service so core classes need not know about it. 
+ * Operates exclusively on core models in order to otherwise decouple from any concrete transit API.
+*/
 @Injectable()
 export class JourneyService implements IJourneyService{
 	private _journeys: Array<Journey> = []; // stores results of most recent journey search
