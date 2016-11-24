@@ -102,6 +102,8 @@ For a conceptual overview of the design, please see also the visual models in `d
 - Back arrow in top nav does not work on iOS, but the browser's Back button does. Polymer element seems to not register the tap.
 
 ### Features/bug fixes/performance improvements
+* Migrate to angular-cli build system
+* Wrap content in centered container with a bit of left/right margin
 * Add mainfest.json so app can be launched from mobile device's home screen
 * Add option to LocalStorage to not check for preexistence before storing when we know db has just been cleared
 * Figure out how to navigate back from a child (i.e. detail) view that has been restored to its parent view, then implement for JourneyDetailsComponent
