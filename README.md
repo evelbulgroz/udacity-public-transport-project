@@ -115,6 +115,7 @@ For a conceptual overview of the design, please see also the visual models in `d
 * Add date/time picker to arrival/departure boards
 * Add location based transit info (e.g. nearby departures/stops)
 * Figure out why app refuses to load in some incognito/private modes
+* Publish on github.io
 
 ### Testing
 * Add unit tests for every core model's (inherited) write/readObject methods
