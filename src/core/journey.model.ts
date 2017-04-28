@@ -6,7 +6,7 @@ import {Model} from './model';
 import {promiseEach} from './../util/promise';
 import {Serializable} from './serializable.interface';
 
-/** classdesc Describes a passenger journey combining one or more legs on individual routes
+/** @classdesc Describes a passenger journey combining one or more legs on individual routes
  *  (so basically a collection of Legs) */
 export class Journey extends Model {
 	protected _legs: Leg[] = [];
