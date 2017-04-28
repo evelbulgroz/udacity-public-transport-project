@@ -3,7 +3,7 @@
 import {Agency} from './../../../core/agency.model';
 import {ITransitAPIProduct} from './../../../core/transit-product.interface';
 
-/** classdesc Describes a public transit agency. An agency operates a number of Routes, e.g. metro lines. 
+/** @classdesc Describes a public transit agency. An agency operates a number of Routes, e.g. metro lines. 
  * Basically exists to provide custom parsing of JSON from Rejseplanen.dk into generic Agency type.
  */
 export class RejseplanenAgency extends Agency implements ITransitAPIProduct{
